@@ -1,0 +1,4 @@
+ANTHROPIC_API_KEY=your_api_key_here
+ 
+# Copy this file to .env and add your actual API key
+# Example: ANTHROPIC_API_KEY=sk-ant-your-actual-key-here 
