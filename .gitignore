@@ -125,7 +125,7 @@ data/
 .DS_Store
 Thumbs.db
 
-# Temporary test files
-test_*.py
+# Temporary debug and investigation files
 debug_*.py
-investigate_*.py 
+investigate_*.py
+temp_*.py 
