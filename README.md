@@ -35,14 +35,22 @@ minutes_cf_compare/
 │   ├── types.py                    # Type definitions
 │   └── py.typed                    # Type information marker
 ├── tests/                          # Test suite
-├── output/                         # Generated reports directory
-├── minutes.csv                     # Meeting minutes data (sample)
-├── campaign_finance.csv            # Campaign finance data (sample)
-├── pyproject.toml                  # Modern Python packaging configuration
-├── requirements.txt                # Python dependencies
-├── .env                           # Environment configuration (create from env_template.txt)
-└── README.md                       # This file
+├── docs/                           # Documentation
+│   └── ARCHITECTURE.md            # Technical architecture details
+├── data/                          # Input data files (gitignored)
+│   ├── minutes.csv                # Meeting minutes data (user-provided)
+│   └── campaign_finance.csv       # Campaign finance data (user-provided)
+├── output/                        # Generated reports (gitignored)
+├── logs/                          # Application logs (gitignored)
+├── pyproject.toml                 # Modern Python packaging configuration
+├── requirements.txt               # Python dependencies
+├── env_template.txt               # Environment configuration template
+├── .env                          # Environment configuration (create from template, gitignored)
+├── .gitignore                    # Git ignore rules
+└── README.md                     # This file
 ```
+
+**Note**: The `data/`, `output/`, `logs/` folders and `.env` file are excluded from version control for security and privacy. Users must provide their own data files and create their `.env` configuration.
 
 ## Installation
 
@@ -178,8 +186,8 @@ Required columns:
 Example:
 ```csv
 Meeting Date,Item Description,Cervantes Vote,Vote Outcome,Beneficiary
-5/23/2023,Franchise agreement for waste collection,AYE,PASSED,Athens Services Inc.
-6/21/2022,Planning permit for car wash facility,AYE,PASSED,Eugene Marini of KA Enterprises
+5/23/2022,Franchise agreement for waste collection,AYE,PASSED,ABC Services Inc.
+6/02/2024,Planning permit for gas station facility,AYE,PASSED,Bob Jones of XYZ Enterprises
 ```
 
 ### Campaign Finance CSV
