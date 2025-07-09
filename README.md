@@ -192,19 +192,22 @@ Meeting Date,Item Description,Cervantes Vote,Vote Outcome,Beneficiary
 
 ### Campaign Finance CSV
 
+Campaign finance data is sourced from the **California Secretary of State PowerSearch** database: [https://powersearch.sos.ca.gov/advanced.php](https://powersearch.sos.ca.gov/advanced.php)
+
+This comprehensive database contains California political contributions from 2001 through the present and provides standardized data exports for analysis.
+
 Required columns:
 - `Start Date`: Contribution date
 - `Contributor`: Name of the contributor
 - `Employer`: Employer of the contributor (optional)
 - `Amount`: Contribution amount
 - `Transaction Type`: Type of contribution
-- `Office`: Office being sought (optional)
 
 Example:
 ```csv
-Start Date,Contributor,Employer,Amount,Transaction Type,Office
-2024-08-30,ABC Services,,500.00,Monetary Contribution,City Council
-2024-02-23,Jones John,XYZ Enterprises,2000.00,Monetary Contribution,City Council
+Start Date,Contributor,Employer,Amount,Transaction Type
+2024-08-30,ABC Services,,500.00,Monetary Contribution
+2024-02-23,Jones John,XYZ Enterprises,2000.00,Monetary Contribution
 ```
 
 ## Output Reports
